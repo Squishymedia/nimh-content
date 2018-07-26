@@ -11,10 +11,10 @@ jobs:
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
       
       # build content container
-      - run: docker build -t openneuro/content .
+      - run: docker build -t squishymedia/nimh-content .
 
       # push content container
-      - run: docker push openneuro/content
+      - run: docker push squishymedia/nimh-content
 
 workflows:
   version: 2

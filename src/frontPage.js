@@ -1,93 +1,72 @@
 // openneuro image assets
-import ljaf from './assets/ljaf.png'
-import nsf from './assets/nsf.png'
+import logo from './assets/nido.png'
+import dsst from './assets/data-science-and-sharing-team.png'
+import fmrif from './assets/fmrif.png'
 import nih from './assets/nih.png'
+import dhhs from './assets/dhhs.png'
 import squishymedia from './assets/squishymedia.png'
-import stanford from './assets/stanford.png'
-import logo_app from './assets/logo_app.png'
-import logo_cube from './assets/logo_cube.png'
-import logo_data from './assets/logo_data.png'
-import logo_users from './assets/logo_users.png'
-import brand_mark from './assets/brand_mark.png'
-import favicon from './assets/favicon.ico'
+import icon from './assets/favicon.ico'
+
 
 export default {
-  pageTitle: 'OpenNeuro',
+  pageTitle: 'NIDO',
   copyright: {
-    holder: 'Stanford Center for Reproducible Neuroscience',
+    holder: 'National Institute of Mental Health',
   },
   pageDescription:
-    'A free and open platform for analyzing and sharing neuroimaging data',
+    'NIMH Intramural Data-sharing with OpenNeuro',
   titlePanel: {
     logos: [
       {
         class: 'logo-layer-users',
-        src: logo_users,
-        alt: 'OpenNeuro Logo',
-      },
-      {
-        class: 'logo-layer-cube',
-        src: logo_cube,
-        alt: 'OpenNeuro Logo',
-      },
-      {
-        class: 'logo-layer-app',
-        src: logo_app,
-        alt: 'OpenNeuro Logo',
-      },
-      {
-        class: 'logo-layer-data',
-        src: logo_data,
-        alt: 'OpenNeuro Logo',
+        src: logo,
+        alt: 'NIMH Intramural Data-sharing with OpenNeuro',
       },
     ],
-    logoText: true,
-    privacyDetail: '',
-    privacyLink: 'https://www.stanford.edu/site/privacy/',
+    logoText: false,
+    privacyDetail: 'This is a U.S. Government computer system, which may be accessed and used only for authorized Government business by authorized personnel. Unauthorized access or use of this computer system may subject violators to criminal, civil, and/or administrative action. All information on this computer system may be intercepted, recorded, read, copied, and disclosed by and to authorized personnel for official purposes, including criminal investigations. Such information includes sensitive data encrypted to comply with confidentiality and privacy requirements. Access or use of this computer system by any person, whether authorized or unauthorized, constitutes consent to these terms. There is no right of privacy in this system.',
+    privacyLink: 'https://www.nimh.nih.gov/site-info/privacy-notice.shtml',
   },
   navBar: {
     brand: {
-      src: brand_mark,
-      alt: "OpenNeuro Logo",
-      title: "OpenNeuro Link to Home Page",
       text: {
-        first: "Open",
-        second: "Neuro"
+        first: "NIDO",
+        second: ""
       }
     }
   },
-  frontPageExtras: true,
-  collaborators: true,
+  frontPageExtras: false,
+  collaborators: false,
   support: [
     {
-      title: 'Arnold Foundation',
-      alt: 'Arnold Foundation',
-      logo: ljaf,
-      link: 'http://www.arnoldfoundation.org/',
+      title: 'Data Science and Sharing Team',
+      alt: 'Data Science and Sharing Team',
+      logo: dsst,
+      link: 'https://cmn.nimh.nih.gov/',
       width: 4,
       offset: 0,
     },
     {
-      title: 'NSF',
-      alt: 'National Science Foundation',
-      logo: nsf,
-      link: 'https://www.nsf.gov/',
+      title: 'FMRIF',
+      alt: 'Functional Magnetic Resonance Facility',
+      logo: fmrif,
+      link: 'https://www.fmrif.nimh.nih.gov/',
       width: 4,
       offset: 0,
+    },
+    {
+      title: 'HHS',
+      alt: 'Department of Health and Human Services',
+      logo: dhhs,
+      link: 'https://www.hhs.gov/',
+      width: 2,
+      offset: 1,
     },
     {
       title: 'NIH',
-      alt: 'National Institute on Drug and Abuse',
+      alt: 'National Institute of Mental Health',
       logo: nih,
-      link: 'https://nih.gov',
-      width: 4,
-      offset: 0,
-    },
-    {
-      title: 'Stanford',
-      alt: 'Stanford',
-      logo: stanford,
-      link: 'https://www.stanford.edu',
+      link: 'https://www.nimh.nih.gov/labs-at-nimh/index.shtml',
       width: 3,
       offset: 3,
     },
